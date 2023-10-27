@@ -2,7 +2,7 @@
   "name": "my-proyect",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://thianzv.github.io/react-proyect",
+  "homepage": "https://thianzv.github.io/react-proyect",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
