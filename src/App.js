@@ -1,21 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
+import AppLista from "./protegido/AppLista";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Cristhian Zavala Valdivia.</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>App</h1>
+      <p>Esta es la página de inicio</p>
+      <AppLista />
     </div>
   );
 }
