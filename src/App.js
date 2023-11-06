@@ -3,9 +3,9 @@ import AppLista from "./protegido/AppLista";
 
 function App() {
   return (
-    <div>
-      <h1>App</h1>
-      <p>Esta es la página de inicio</p>
+    <div className="bg-gray-600 w-full h-auto p-10">
+      <h1 className="text-3xl font-bold text-white text-center">App Js</h1>
+      <p className="text-gray-300 text-center">Esta es la página de inicio</p>
       <AppLista />
     </div>
   );
