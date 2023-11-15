@@ -1,12 +1,14 @@
+import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-import AppLista from "./protegido/AppLista";
+import BarraRutasPublic from "./ruteo/BarraRutasPublic";
+import BarraRutasProtected from "./ruteo/BarraRutasProtected";
+import { useAuth } from "./ruteo/AuthContext";
 
 function App() {
+  const { user } = useAuth();
   return (
-    <div className="bg-gray-600 w-full h-auto p-10">
-      <h1 className="text-3xl font-bold text-white text-center">App Js</h1>
-      <p className="text-gray-300 text-center">Esta es la página de inicio</p>
-      <AppLista />
+    <div>
+      <Router>{user ? <BarraRutasProtected /> : <BarraRutasPublic />}</Router>
     </div>
   );
 }
