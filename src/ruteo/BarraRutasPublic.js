@@ -40,8 +40,8 @@ const BarraRutasPublic = () => {
     <div>
       <nav className="bg-white border-gray-300 dark:bg-black">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href="https://flowbite.com/"
+          <Link
+            to={"/home"}
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
@@ -51,7 +51,7 @@ const BarraRutasPublic = () => {
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Sistema Crud
             </span>
-          </a>
+          </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <Link
               type="button"
@@ -107,7 +107,7 @@ const BarraRutasPublic = () => {
               <li>
                 <Link
                   className="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-gray-300"
-                  to="/*"
+                  to="/home"
                 >
                   Home
                 </Link>{" "}
